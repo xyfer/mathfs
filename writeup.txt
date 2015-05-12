@@ -1,0 +1,49 @@
+Group Members: Zachary Scott (solo)
+
+Test cases:
+
+AS PER SAKAI:
+
+/factor/138 should act as a file containing the numbers 2, 3, 23, one per line and ending with a newline.
+/fib/3 should act as a file containing the numbers 1, 1, 2, one per line and ending with a newline. 
+/add/5/3 should act as a file containing the number 8 and ending with a newline. 
+/sub/5/3 should act as a file containing the number 2 and ending with a newline. 
+/mul/5/3 should act as a file containing the number 15 and ending with a newline. 
+/div/5/3 should act as a file containing the number 1.6666 and ending with a newline. 
+/exp/2/3 should act as a file containing the number 8 and ending with a newline.
+
+$ ls -l math/div
+
+$ cat math/add/1234/5.52
+
+$ cat math/fib/50|tail -10
+
+$ cat math/div/500/0
+
+$ cat math/factor/223092870
+
+$ cat math/factor/5.5
+
+$ ls -l math/*/*
+
+$ cat math/exp/doc
+
+/////////////////
+ALL PASSED
+////////////////
+
+UNIQUE TEST CASES
+
+factoring a negative number: PASS
+
+passing a very large number (overflow): PASS
+
+giving the program a function with insufficient arguments (EG: ls math/add/1); shows empty directory
+
+Mispelling in pathname (EG "cat math/adddd") "No such directory"
+
+/////////////////
+ALL PASSED
+////////////////
+
+
